@@ -9,6 +9,28 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock x:Name="Height" HorizontalAlignment="Left" Height="22" Margin="205,126,0,0" Text="Height:" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" FontSize="14" RenderTransformOrigin="0.498,-0.818"/>
+        <TextBlock x:Name="Width" HorizontalAlignment="Left" Height="23" Margin="205,172,0,0" Text="Width:" TextWrapping="Wrap" VerticalAlignment="Top" Width="71" FontSize="14" RenderTransformOrigin="0.46,0.07"/>
+        <TextBlock x:Name="Quantity" HorizontalAlignment="Left" Height="22" Margin="205,229,0,0" Text="Quantity:" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" FontSize="14"/>
+        <TextBlock x:Name="Color" HorizontalAlignment="Left" Height="30" Margin="205,272,0,0" Text="Color:" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" FontSize="14"/>
+        <TextBlock x:Name="GlazerCalc" HorizontalAlignment="Left" Height="32" Margin="320,80,0,0" Text="Glazer Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="HeightValue" HorizontalAlignment="Left" Height="33" Margin="283,118,0,0" Text="" VerticalAlignment="Top" Width="79" FontSize="12" KeyUp="HeightValue_KeyUp"/>
+        <TextBox x:Name="WidthValue" HorizontalAlignment="Left" Height="33" Margin="283,172,0,0" Text="" VerticalAlignment="Top" Width="79" FontSize="12" KeyUp="WidthValue_KeyUp"/>
+        <TextBlock x:Name="SliderValue" HorizontalAlignment="Left" Height="34" Margin="464,216,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" FontSize="12"/>
+        <ComboBox x:Name="ColorDropDown" HorizontalAlignment="Left" Height="38" Margin="283,258,0,0" VerticalAlignment="Top" Width="151" FontFamily="Segoe UI">
+            <ComboBoxItem Background="Black" Content="Black" Foreground="White"/>
+            <ComboBoxItem Background="#FFA93A3A" Content="Brown" Foreground="#FFFEFEFE"/>
+            <ComboBoxItem Background="#FF2A1080" Content="Blue" Foreground="White"/>
+        </ComboBox>
+        <Slider x:Name="QuantitySlider" HorizontalAlignment="Left" Height="43" Margin="286,217,0,0" VerticalAlignment="Top" Width="151" ValueChanged="QuantitySlider_ValueChanged"/>
+        <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Left" Height="61" Margin="286,333,0,0" VerticalAlignment="Top" Width="153" FontFamily="Segoe UI" Click="Calculate_Click"/>
+        <TextBlock x:Name="LengthOfWood" HorizontalAlignment="Left" Height="31" Margin="158,434,0,0" Text="Length of Wood:" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" FontSize="14"/>
+        <TextBox x:Name="LengthValue" HorizontalAlignment="Left" Height="35" Margin="286,434,0,0" Text="" VerticalAlignment="Top" Width="216"/>
+        <TextBlock x:Name="AreaOfGlass" HorizontalAlignment="Left" Height="31" Margin="177,485,0,0" Text="Area of Glass:" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" FontSize="14"/>
+        <TextBox x:Name="GlassValue" HorizontalAlignment="Left" Height="35" Margin="288,485,0,0" Text="" VerticalAlignment="Top" Width="218"/>
+        <TextBlock x:Name="DateOrdered" HorizontalAlignment="Left" Height="35" Margin="174,546,0,0" Text="Date Ordered:" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="14"/>
+        <TextBox x:Name="DateValue" HorizontalAlignment="Left" Height="36" Margin="286,537,0,0" Text="" VerticalAlignment="Top" Width="220"/>
+        <TextBlock x:Name="MessageBox" HorizontalAlignment="Left" Height="36" Margin="392,145,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
 
     </Grid>
 </Page>
